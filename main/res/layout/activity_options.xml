@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/numbersbackground"
+    android:contentDescription=".Options">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#A4FFFFFF">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/OptionsHeader2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:gravity="center"
+            android:lineSpacingExtra="8sp"
+            android:text="@string/OptionsHeader1"
+            android:background="#546BF7CD"
+            android:textAllCaps="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:paddingBottom="30dp"/>
+
+        <TextView
+            android:id="@+id/Instructions1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:ems="10"
+            android:text="Please choose one or more operators. Then press on one difficulty and the game will start!"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Difficulty"
+            android:layout_gravity="center"
+            android:paddingBottom="10dp"
+            android:textColor="#E9D34A06"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textAllCaps="true"/>
+
+
+        <Button
+            android:id="@+id/Difficulty1"
+            android:layout_width="180dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="#546BF7CD"
+            android:textSize="18sp"
+            android:onClick="setDifficulty"
+            android:requiresFadingEdge="horizontal|vertical"
+            android:scaleType="fitCenter"
+            android:text="@string/Difficulty1"
+            android:textColor="#000000"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/Difficulty2"
+            android:layout_width="180dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="#546BF7CD"
+            android:textSize="18sp"
+            android:onClick="setDifficulty"
+            android:scaleType="fitCenter"
+            android:text="@string/Difficulty2"
+            android:textColor="#000000"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/Difficulty3"
+            android:layout_width="180dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="#546BF7CD"
+            android:textSize="18sp"
+            android:onClick="setDifficulty"
+            android:scaleType="fitCenter"
+            android:text="@string/Difficulty3"
+            android:textColor="#000000"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="left"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="Operators"
+                    android:textAllCaps="true"
+                    android:textColor="#E9D34A06"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+
+                <Switch
+                    android:id="@+id/Add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layoutDirection="rtl"
+                    android:paddingTop="20dp"
+                    android:text="Add"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <Switch
+                    android:id="@+id/Subtract"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layoutDirection="rtl"
+                    android:paddingTop="20dp"
+                    android:text="Subtract"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <Switch
+                    android:id="@+id/Multiply"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layoutDirection="rtl"
+                    android:paddingTop="20dp"
+                    android:text="Multiply"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <Switch
+                    android:id="@+id/Divide"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layoutDirection="rtl"
+                    android:paddingTop="20dp"
+                    android:text="Divide"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <Switch
+                    android:id="@+id/Exponent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layoutDirection="rtl"
+                    android:paddingTop="20dp"
+                    android:text="Exponent"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <Switch
+                    android:id="@+id/Square_Root"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layoutDirection="rtl"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="Square_Root"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:orientation="vertical"
+                android:gravity="right">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="Additional Features"
+                    android:textAllCaps="true"
+                    android:textColor="#E9D34A06"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <Switch
+                    android:id="@+id/Negative_Numbers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Negative Numbers"
+                    android:paddingTop="20dp"
+                    android:layout_gravity="right"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+
+                <Switch
+                    android:id="@+id/Teach"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Teach_Mode"
+                    android:paddingTop="20dp"
+                    android:layout_gravity="right"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+
+                <Switch
+                    android:id="@+id/DoSim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Simulate"
+                    android:paddingTop="20dp"
+                    android:layout_gravity="right"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <Switch
+                    android:id="@+id/Reward"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="Reward"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+

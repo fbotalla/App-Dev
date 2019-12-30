@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Display"
+    android:background="@drawable/numbersbackground">
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#A4FFFFFF"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+
+
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/OptionsHeader1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="#546BF7CD"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:lineSpacingExtra="8sp"
+                    android:text="@string/Header1"
+                    android:textAllCaps="true"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:typeface="serif"
+                    app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+
+                <TextView
+                    android:id="@+id/display"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="center"
+                    android:lineSpacingExtra="12sp"
+                    android:text="@string/Display"
+                    android:textColor="#9C27B0"
+                    android:textSize="54sp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+
+
+                <GridLayout
+                    android:id="@+id/gridLayout"
+                    android:layout_width="269dp"
+                    android:layout_height="246dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginRight="32dp"
+                    android:layout_marginBottom="32dp"
+                    android:columnCount="3"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <Button
+                        android:onClick="getQuit"
+                        android:text="@string/Quit" />
+
+                    <Button
+                        android:onClick="getSave"
+                        android:text="@string/Save" />
+
+                    <Button
+                        android:onClick="getBack"
+                        android:text="@string/Back" />
+
+                    <Button
+                        android:onClick="getOne"
+                        android:text="@string/One" />
+
+                    <Button
+                        android:onClick="getTwo"
+                        android:text="@string/Two" />
+
+                    <Button
+                        android:onClick="getThree"
+                        android:text="@string/Three" />
+
+                    <Button
+                        android:onClick="getFour"
+                        android:text="@string/Four" />
+
+                    <Button
+                        android:onClick="getFive"
+                        android:text="@string/Five" />
+
+                    <Button
+                        android:onClick="getSix"
+                        android:text="@string/Six" />
+
+                    <Button
+                        android:onClick="getSeven"
+                        android:text="@string/Seven" />
+
+                    <Button
+                        android:onClick="getEight"
+                        android:text="@string/Eight" />
+
+                    <Button
+                        android:onClick="getNine"
+                        android:text="@string/Nine" />
+
+                    <Button
+                        android:onClick="getSign"
+                        android:text="@string/Sign" />
+
+                    <Button
+                        android:onClick="getZero"
+                        android:text="@string/Zero" />
+
+                    <Button
+                        android:onClick="getEnter"
+                        android:text="@string/Enter" />
+
+                </GridLayout>
+
+
+                    </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/gifImageView"
+            android:layout_width="match_parent"
+            android:layout_height="581dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:src="@drawable/fireworks"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/linearLayout" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

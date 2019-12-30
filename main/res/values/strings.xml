@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Mathproof</string>
+    <string name="Header1">Math{Proof}</string>
+    <string name="Header3">Where Learning is Fun!</string>
+    <string name="start">Start</string>
+    <string name="Load">Load</string>
+    <string name="OptionsHeader1">Math{Proof}</string>
+    <string name="OptionsHeader3">Choose Difficulty</string>
+    <string name="Difficulty1">Beginner(5)</string>
+    <string name="Difficulty2">Intermediate (10)</string>
+    <string name="Difficulty3">Advanced (15)</string>
+    <string name="Switch1">Sound</string>
+    <string name="Display"></string>
+    <string name="options">Options</string>
+    <string name="Rewards">Rewards</string>
+    <string name="One">1</string>
+    <string name="Two">2</string>
+    <string name="Three">3</string>
+    <string name="Four">4</string>
+    <string name="Five">5</string>
+    <string name="Six">6</string>
+    <string name="Seven">7</string>
+    <string name="Eight">8</string>
+    <string name="Nine">9</string>
+    <string name="Zero">0</string>
+    <string name="Sign">-</string>
+    <string name="Enter">Enter</string>
+    <string name="Quit">Quit</string>
+    <string name="Save"></string>
+    <string name="Saver">Save</string>
+    <string name="Back">Back</string>
+    <string name="LoadSaverTitle">Load/Save</string>
+    <string name="Quote">Practice Makes Perfect</string>
+    <string name="HighScore">Your HighScore is</string>
+    <string name="highScore">High Score</string>
+
+    <string name="Operators"></string>
+    <color name="green">#afea98</color>
+</resources>

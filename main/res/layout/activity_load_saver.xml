@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".LoadSaver">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.3"
+        android:background="@drawable/numbersbackground"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/OptionsHeader1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#546BF7CD"
+        android:ems="10"
+        android:gravity="center"
+        android:lineSpacingExtra="8sp"
+        android:text="@string/LoadSaverTitle"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <TextView
+        android:id="@+id/Header3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:textSize="18dp"
+        android:ems="10"
+        android:gravity="center"
+        android:text="@string/Quote"
+        android:textColor="#000000"
+        android:background="#546BF7CD"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/OptionsHeader1" />
+
+    <Button
+        android:id="@+id/saver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#546BF7CD"
+        android:onClick="save"
+        android:text="@string/Saver"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/OptionsHeader1"
+        app:layout_constraintVertical_bias="0.3"
+        tools:text="SAVE" />
+
+    <Button
+        android:id="@+id/quit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#546BF7CD"
+        android:onClick="quit"
+        android:text="@string/Quit"
+        android:textColor="#000000"
+        android:textSize="18dp"
+
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/saver"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <TextView
+        android:id="@+id/Header4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:textSize="18dp"
+        android:ems="10"
+        android:gravity="center"
+        android:text="@string/Quote"
+        android:textColor="#000000"
+        android:background="#546BF7CD"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/OptionsHeader1" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout3"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout3"
+        app:layout_constraintTop_toBottomOf="@+id/quit">
+
+        <TableRow>
+
+            <TextView
+                android:text="Operators"
+                android:gravity="left"
+                android:paddingLeft="20dp"
+                android:textColor="#000000"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:text="Difficulty"
+                android:gravity="center"
+                android:paddingLeft="40dp"
+                android:paddingRight="10dp"
+                android:textColor="#000000"
+                android:textSize="18dp"/>/>
+
+            <TextView
+                android:gravity="center"
+                android:text="HighScore"
+                android:paddingRight="40dp"
+                android:paddingLeft="10dp"
+                android:textColor="#000000"
+                android:textSize="18dp"/>/>
+
+            <TextView
+                android:text="Time"
+                android:gravity="right"
+                android:paddingRight="20dp"
+                android:textColor="#000000"
+                android:textSize="18dp"/>/>
+        </TableRow>
+
+
+        <TableRow
+            android:paddingTop="10dp"
+            android:textAlignment="center">
+            <TextView
+                android:id="@+id/Operators"
+                android:text="Operators"
+                android:gravity="left"
+                android:paddingLeft="20dp"
+                android:textColor="#0C30F8"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/Difficulty"
+                android:text="Difficulty"
+                android:gravity="center"
+                android:paddingLeft="40dp"
+                android:textColor="#26BB00"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/HighScore"
+                android:gravity="center"
+                android:text="HighScore"
+                android:paddingRight="40dp"
+                android:textColor="#9C27B0"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/bestTime"
+                android:text="Time"
+                android:gravity="right"
+                android:paddingRight="20dp"
+                android:textColor="#FC0808"
+                android:textStyle="bold"/>
+        </TableRow>
+
+
+
+
+
+    </TableLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
